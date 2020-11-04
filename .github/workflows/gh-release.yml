@@ -24,12 +24,12 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
 
-          git lfs fetch --all
-          git lfs ls-files -n | xargs git lfs untrack
-          git rm -f .gitattributes
-          git lfs uninstall
-
-          git add --renormalize .
+          # git lfs fetch --all
+          # git lfs ls-files -n | xargs git lfs untrack
+          # git rm -f .gitattributes
+          # git lfs uninstall
+          #
+          # git add --renormalize .
 
           mv ./addon/* .;
           rm -rf README.md documentation addon;
